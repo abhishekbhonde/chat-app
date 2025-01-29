@@ -10,7 +10,7 @@ export default function App() {
   const wsRef = useRef<WebSocket | null>(null); // WebSocket reference
 
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:8080");
+    const ws = new WebSocket("https://chat-app-1-nupk.onrender.com/");
 
     ws.onopen = () => {
       console.log("WebSocket connected!");
